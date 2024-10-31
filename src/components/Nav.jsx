@@ -18,7 +18,7 @@ function Nav() {
       {/* Hamburger Menu */}
       <button
         onClick={() => setIsMobileMenuShow(!isMobileMenuShow)}
-        className="p-2 focus:ring-2 focus:ring-gray-200 rounded-lg hover:bg-gray-100 lg:hidden"
+        className="p-2 btn-press-anim focus:ring-2 focus:ring-gray-200 rounded-lg hover:bg-gray-100 lg:hidden"
       >
         <RxHamburgerMenu size={25} />
       </button>
@@ -53,7 +53,7 @@ function Nav() {
 
       {/* Cart button */}
       <div className="fixed left-4 bottom-4 lg:static lg:mr-8">
-        <div className="flex-center rounded-full h-12 w-12 cursor-pointer bg-white shadow-md ">
+        <div className="btn-press-anim flex-center rounded-full h-12 w-12 cursor-pointer bg-white shadow-md ">
           <RiShoppingBag2Fill />
         </div>
       </div>

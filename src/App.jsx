@@ -3,7 +3,7 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="p-5 xl:px-24">
+    <div className="select-none p-5 xl:px-24 animate-fadeIn">
       <Nav />
       <ItemDetail />
     </div>
