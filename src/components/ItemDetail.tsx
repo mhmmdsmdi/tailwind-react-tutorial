@@ -1,4 +1,5 @@
 import React from "react";
+import Select from "./Select";
 
 function ItemDetail() {
   return (
@@ -18,8 +19,11 @@ function ItemDetail() {
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum iste eum voluptatem obcaecati consequuntur atque labore, laudantium itaque. Qui          molestias eum incidunt aperiam corporis sint ullam quae, magnam odit          delectus."
           }
         </div>
-        <div className="text-3xl font-extrabold md:text-6xl">100$</div>
-
+        <div className="flex space-x-6 items-center">
+          <div className="text-3xl font-extrabold md:text-6xl">100$</div>
+          <Select title={"QTY"} options={[1, 2, 3, 4]} />
+          <Select title={"SIZE"} options={[37, 38, 39, 40, 41, 42, 43, 44]} />
+        </div>
         {/* Buttons and Links */}
         <div className="space-x-10">
           <button className="h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700">
